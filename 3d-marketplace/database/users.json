@@ -1,0 +1,115 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@3dmarket.com",
+      "password": "$2b$10$8K1p/a9l.pDK.uKCJ6v1.OmJ5eLwQ1X8I1FJ5tL8/oJ4v7C8/8aUe",
+      "fullName": "Administrator",
+      "role": "admin",
+      "avatar": "👨‍💼",
+      "createdAt": "2024-01-01T00:00:00Z",
+      "lastLogin": "2024-01-15T10:30:00Z",
+      "isActive": true,
+      "preferences": {
+        "theme": "dark",
+        "language": "id",
+        "notifications": true
+      },
+      "address": {
+        "street": "Jl. Admin No. 1",
+        "city": "Jakarta",
+        "state": "DKI Jakarta",
+        "zipCode": "12345",
+        "country": "Indonesia"
+      },
+      "phone": "+62-21-1234-5678"
+    },
+    {
+      "id": 2,
+      "username": "johndoe",
+      "email": "john@email.com",
+      "password": "$2b$10$Rv6DfkPkU2C1gJ8L8/7/4eE5xJ2f3gH9tK6mN7pQ8sR9vT0uW1yX2z",
+      "fullName": "John Doe",
+      "role": "customer",
+      "avatar": "👨",
+      "createdAt": "2024-01-05T08:15:00Z",
+      "lastLogin": "2024-01-14T14:22:00Z",
+      "isActive": true,
+      "preferences": {
+        "theme": "dark",
+        "language": "en",
+        "notifications": true
+      },
+      "address": {
+        "street": "Jl. Sudirman No. 123",
+        "city": "Jakarta",
+        "state": "DKI Jakarta",
+        "zipCode": "10220",
+        "country": "Indonesia"
+      },
+      "phone": "+62-812-3456-7890"
+    },
+    {
+      "id": 3,
+      "username": "sarah",
+      "email": "sarah@gmail.com",
+      "password": "$2b$10$9L2pB5dF7tE8sH1kM3oR6qU4yV8wZ0aX2bC5eG9iJ7lN4pQ6sT8vY1",
+      "fullName": "Sarah Johnson",
+      "role": "customer",
+      "avatar": "👩",
+      "createdAt": "2024-01-08T12:30:00Z",
+      "lastLogin": "2024-01-13T09:45:00Z",
+      "isActive": true,
+      "preferences": {
+        "theme": "light",
+        "language": "id",
+        "notifications": false
+      },
+      "address": {
+        "street": "Jl. Gatot Subroto No. 45",
+        "city": "Bandung",
+        "state": "Jawa Barat",
+        "zipCode": "40123",
+        "country": "Indonesia"
+      },
+      "phone": "+62-813-9876-5432"
+    },
+    {
+      "id": 4,
+      "username": "demo",
+      "email": "demo@3dmarket.com",
+      "password": "$2b$10$demouser123456789abcdefghijklmnopqrstuvwxyz",
+      "fullName": "Demo User",
+      "role": "customer",
+      "avatar": "🧪",
+      "createdAt": "2024-01-10T16:00:00Z",
+      "lastLogin": "2024-01-15T11:15:00Z",
+      "isActive": true,
+      "preferences": {
+        "theme": "dark",
+        "language": "id",
+        "notifications": true
+      },
+      "address": {
+        "street": "Jl. Demo No. 999",
+        "city": "Jakarta",
+        "state": "DKI Jakarta",
+        "zipCode": "12999",
+        "country": "Indonesia"
+      },
+      "phone": "+62-888-9999-0000"
+    }
+  ],
+  "sessions": [],
+  "loginAttempts": {},
+  "settings": {
+    "maxLoginAttempts": 5,
+    "lockoutDuration": 300000,
+    "sessionTimeout": 86400000,
+    "passwordMinLength": 8,
+    "requireUppercase": true,
+    "requireNumbers": true,
+    "requireSpecialChars": false
+  }
+}

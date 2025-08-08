@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Marketplace - Toko Online Modern</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1>3D<span>Market</span></h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#home">Beranda</a>
+                <a href="#products">Produk</a>
+                <a href="#categories">Kategori</a>
+                <a href="#about">Tentang</a>
+                <a href="#contact">Kontak</a>
+            </div>
+            <div class="nav-actions">
+                <button class="search-btn">🔍</button>
+                <button class="cart-btn">🛒 <span class="cart-count">0</span></button>
+                <button class="login-btn">Masuk</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with 3D Background -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title">Selamat Datang di <span class="gradient-text">3D Marketplace</span></h1>
+            <p class="hero-subtitle">Rasakan pengalaman belanja online yang tak terlupakan dengan visual 3D yang menakjubkan</p>
+            <div class="hero-buttons">
+                <button class="cta-primary">Mulai Belanja</button>
+                <button class="cta-secondary">Jelajahi Produk</button>
+            </div>
+        </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <h3>1000+</h3>
+                <p>Produk</p>
+            </div>
+            <div class="stat-item">
+                <h3>5000+</h3>
+                <p>Pelanggan</p>
+            </div>
+            <div class="stat-item">
+                <h3>99%</h3>
+                <p>Kepuasan</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Kategori Populer</h2>
+            <div class="categories-grid">
+                <div class="category-card" data-category="elektronik">
+                    <canvas class="category-canvas"></canvas>
+                    <div class="category-content">
+                        <h3>Elektronik</h3>
+                        <p>Smartphone, Laptop, Gadget</p>
+                        <button class="category-btn">Lihat Produk</button>
+                    </div>
+                </div>
+                <div class="category-card" data-category="fashion">
+                    <canvas class="category-canvas"></canvas>
+                    <div class="category-content">
+                        <h3>Fashion</h3>
+                        <p>Pakaian, Sepatu, Aksesoris</p>
+                        <button class="category-btn">Lihat Produk</button>
+                    </div>
+                </div>
+                <div class="category-card" data-category="furniture">
+                    <canvas class="category-canvas"></canvas>
+                    <div class="category-content">
+                        <h3>Furniture</h3>
+                        <p>Meja, Kursi, Dekorasi</p>
+                        <button class="category-btn">Lihat Produk</button>
+                    </div>
+                </div>
+                <div class="category-card" data-category="olahraga">
+                    <canvas class="category-canvas"></canvas>
+                    <div class="category-content">
+                        <h3>Olahraga</h3>
+                        <p>Sepatu, Baju, Peralatan</p>
+                        <button class="category-btn">Lihat Produk</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Produk Unggulan</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-3d">
+                        <canvas class="product-canvas"></canvas>
+                    </div>
+                    <div class="product-info">
+                        <h3>iPhone 15 Pro</h3>
+                        <p class="product-price">Rp 18.999.000</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span>(4.8)</span>
+                        </div>
+                        <button class="add-to-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-3d">
+                        <canvas class="product-canvas"></canvas>
+                    </div>
+                    <div class="product-info">
+                        <h3>MacBook Air M3</h3>
+                        <p class="product-price">Rp 21.999.000</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span>(4.9)</span>
+                        </div>
+                        <button class="add-to-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-3d">
+                        <canvas class="product-canvas"></canvas>
+                    </div>
+                    <div class="product-info">
+                        <h3>Nike Air Jordan</h3>
+                        <p class="product-price">Rp 2.499.000</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span>(4.7)</span>
+                        </div>
+                        <button class="add-to-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-3d">
+                        <canvas class="product-canvas"></canvas>
+                    </div>
+                    <div class="product-info">
+                        <h3>Gaming Chair Pro</h3>
+                        <p class="product-price">Rp 3.999.000</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span>(4.6)</span>
+                        </div>
+                        <button class="add-to-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-3d">
+                        <canvas class="product-canvas"></canvas>
+                    </div>
+                    <div class="product-info">
+                        <h3>PlayStation 5</h3>
+                        <p class="product-price">Rp 8.999.000</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span>(4.9)</span>
+                        </div>
+                        <button class="add-to-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-3d">
+                        <canvas class="product-canvas"></canvas>
+                    </div>
+                    <div class="product-info">
+                        <h3>Samsung Galaxy S24</h3>
+                        <p class="product-price">Rp 14.999.000</p>
+                        <div class="product-rating">
+                            ⭐⭐⭐⭐⭐ <span>(4.8)</span>
+                        </div>
+                        <button class="add-to-cart">Tambah ke Keranjang</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Tentang 3D Marketplace</h2>
+                    <p>Kami adalah platform e-commerce terdepan yang menghadirkan pengalaman belanja online dengan teknologi 3D yang revolusioner. Dengan visual yang memukau dan interaktif, pelanggan dapat melihat produk dari berbagai sudut sebelum melakukan pembelian.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <h4>🌟 Pengalaman 3D</h4>
+                            <p>Lihat produk dalam visual 3D yang realistis</p>
+                        </div>
+                        <div class="feature">
+                            <h4>🚚 Pengiriman Cepat</h4>
+                            <p>Pengiriman ke seluruh Indonesia dalam 1-3 hari</p>
+                        </div>
+                        <div class="feature">
+                            <h4>💎 Kualitas Terjamin</h4>
+                            <p>Produk original dengan garansi resmi</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <canvas id="about-canvas"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>3D<span>Market</span></h3>
+                    <p>Platform marketplace dengan teknologi 3D terdepan di Indonesia</p>
+                    <div class="social-links">
+                        <a href="#">📘</a>
+                        <a href="#">📷</a>
+                        <a href="#">🐦</a>
+                        <a href="#">💼</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Produk</h4>
+                    <a href="#">Elektronik</a>
+                    <a href="#">Fashion</a>
+                    <a href="#">Furniture</a>
+                    <a href="#">Olahraga</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Bantuan</h4>
+                    <a href="#">FAQ</a>
+                    <a href="#">Panduan Belanja</a>
+                    <a href="#">Kebijakan Return</a>
+                    <a href="#">Customer Service</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Kontak</h4>
+                    <p>📞 +62 21 1234 5678</p>
+                    <p>✉️ info@3dmarket.com</p>
+                    <p>📍 Jakarta, Indonesia</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 3D Marketplace. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Keranjang Belanja</h2>
+            <div id="cart-items"></div>
+            <div class="cart-total">
+                <h3>Total: <span id="cart-total-amount">Rp 0</span></h3>
+            </div>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

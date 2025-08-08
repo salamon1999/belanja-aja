@@ -1,0 +1,71 @@
+{
+  "name": "3d-marketplace",
+  "version": "1.0.0",
+  "description": "Website marketplace modern dengan visual 3D yang menakjubkan",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "live-server --port=3000",
+    "build": "echo 'No build process needed for static site'",
+    "test": "echo 'No tests configured'"
+  },
+  "keywords": [
+    "marketplace",
+    "3d",
+    "threejs",
+    "ecommerce",
+    "modern",
+    "responsive",
+    "javascript",
+    "html5",
+    "css3"
+  ],
+  "author": {
+    "name": "Developer",
+    "email": "developer@3dmarket.com",
+    "url": "https://github.com/developer"
+  },
+  "license": "MIT",
+  "homepage": "https://3dmarketplace.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/developer/3d-marketplace.git"
+  },
+  "bugs": {
+    "url": "https://github.com/developer/3d-marketplace/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie <= 11"
+  ],
+  "technologies": {
+    "frontend": [
+      "HTML5",
+      "CSS3",
+      "JavaScript ES6+",
+      "Three.js",
+      "GSAP"
+    ],
+    "libraries": [
+      "Three.js r128",
+      "GSAP 3.12.2",
+      "Google Fonts (Inter)"
+    ]
+  },
+  "features": [
+    "3D Interactive Visuals",
+    "Shopping Cart System",
+    "Responsive Design",
+    "Modern UI/UX",
+    "Smooth Animations",
+    "Performance Optimized",
+    "Mobile Friendly"
+  ]
+}
