@@ -1,0 +1,30 @@
+{
+  "name": "belanja-aja",
+  "version": "1.0.0",
+  "description": "Aplikasi e-commerce untuk belanja online yang mudah dan nyaman",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "npm run build:frontend",
+    "build:frontend": "cd frontend && npm run build",
+    "test": "npm run test:backend && npm run test:frontend",
+    "test:backend": "cd backend && npm test",
+    "test:frontend": "cd frontend && npm test"
+  },
+  "keywords": [
+    "ecommerce",
+    "belanja",
+    "online-shop",
+    "marketplace"
+  ],
+  "author": "salamon1999",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/salamon1999/belanja-aja.git"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
