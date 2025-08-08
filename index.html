@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belanja Aja - Marketplace Online Terpercaya</title>
+    <meta name="description" content="Belanja online mudah dan nyaman di Belanja Aja. Ribuan produk berkualitas dengan harga terbaik.">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1><i class="fas fa-shopping-bag"></i> Belanja Aja</h1>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link">Beranda</a>
+                <a href="#products" class="nav-link">Produk</a>
+                <a href="#categories" class="nav-link">Kategori</a>
+                <a href="#about" class="nav-link">Tentang</a>
+                <a href="#contact" class="nav-link">Kontak</a>
+            </div>
+            <div class="nav-icons">
+                <i class="fas fa-search" onclick="toggleSearch()"></i>
+                <i class="fas fa-shopping-cart"></i>
+                <i class="fas fa-user"></i>
+                <i class="fas fa-bars mobile-menu-btn" onclick="toggleMobileMenu()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search Bar -->
+    <div class="search-container" id="searchContainer">
+        <div class="container">
+            <input type="text" placeholder="Cari produk..." class="search-input">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Selamat Datang di <span class="highlight">Belanja Aja</span></h2>
+                <p>Marketplace online terpercaya untuk segala kebutuhan Anda. Belanja mudah, cepat, dan aman!</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('products')">Mulai Belanja</button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('about')">Pelajari Lebih Lanjut</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="container">
+            <h2 class="section-title">Kategori Populer</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <i class="fas fa-laptop"></i>
+                    <h3>Elektronik</h3>
+                    <p>Laptop, HP, Gadget</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-tshirt"></i>
+                    <h3>Fashion</h3>
+                    <p>Pakaian, Sepatu, Aksesoris</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-home"></i>
+                    <h3>Rumah Tangga</h3>
+                    <p>Peralatan Dapur, Furniture</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-gamepad"></i>
+                    <h3>Hobi & Gaming</h3>
+                    <p>Game, Konsol, Koleksi</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Kesehatan</h3>
+                    <p>Vitamin, Suplemen, Obat</p>
+                </div>
+                <div class="category-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Otomotif</h3>
+                    <p>Sparepart, Aksesoris Mobil</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2 class="section-title">Produk Terpopuler</h2>
+            <div class="product-grid" id="productGrid">
+                <!-- Products akan dimuat dengan JavaScript -->
+            </div>
+            <div class="text-center">
+                <button class="btn btn-outline" onclick="loadMoreProducts()">Muat Lebih Banyak</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2 class="section-title">Mengapa Pilih Belanja Aja?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-shipping-fast"></i>
+                    <h3>Pengiriman Cepat</h3>
+                    <p>Gratis ongkir untuk pembelian minimal Rp 50.000</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Aman & Terpercaya</h3>
+                    <p>Transaksi dijamin aman dengan sistem keamanan terdepan</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-headset"></i>
+                    <h3>Customer Service 24/7</h3>
+                    <p>Tim support siap membantu Anda kapan saja</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-undo"></i>
+                    <h3>Mudah Return</h3>
+                    <p>Kebijakan return yang mudah dan cepat</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Tentang Belanja Aja</h2>
+                    <p>Belanja Aja adalah platform e-commerce terdepan yang menyediakan berbagai produk berkualitas dengan harga terjangkau. Kami berkomitmen memberikan pengalaman berbelanja online terbaik untuk semua pelanggan.</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Ribuan produk pilihan</li>
+                        <li><i class="fas fa-check"></i> Harga kompetitif</li>
+                        <li><i class="fas fa-check"></i> Kualitas terjamin</li>
+                        <li><i class="fas fa-check"></i> Pelayanan terbaik</li>
+                    </ul>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/about-illustration.svg" alt="About Belanja Aja" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Alamat</h4>
+                            <p>Jl. Raya Indonesia No. 123, Jakarta</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telepon</h4>
+                            <p>+62 21 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@belanja-aja.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <input type="text" placeholder="Nama Lengkap" required>
+                        <input type="email" placeholder="Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-shopping-bag"></i> Belanja Aja</h3>
+                    <p>Marketplace online terpercaya untuk segala kebutuhan Anda. Belanja mudah, cepat, dan aman!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategori</h4>
+                    <ul>
+                        <li><a href="#">Elektronik</a></li>
+                        <li><a href="#">Fashion</a></li>
+                        <li><a href="#">Rumah Tangga</a></li>
+                        <li><a href="#">Kesehatan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li><a href="#">Cara Berbelanja</a></li>
+                        <li><a href="#">Pembayaran</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Return & Refund</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Tentang Kami</h4>
+                    <ul>
+                        <li><a href="#">Tentang Belanja Aja</a></li>
+                        <li><a href="#">Karir</a></li>
+                        <li><a href="#">Press Release</a></li>
+                        <li><a href="#">Kebijakan Privasi</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Belanja Aja. Semua hak dilindungi. | Dibuat dengan ❤️ untuk Indonesia</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

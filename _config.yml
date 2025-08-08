@@ -1,0 +1,48 @@
+# Site settings
+title: Belanja Aja
+description: Marketplace online terpercaya untuk segala kebutuhan Anda. Belanja mudah, cepat, dan aman!
+baseurl: ""
+url: "https://salamon1999.github.io"
+
+# GitHub Pages settings
+github_username: salamon1999
+repository: belanja-aja
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+theme: minima
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# SEO settings
+lang: id
+author: salamon1999
+twitter:
+  username: salamon1999
+  card: summary_large_image
+
+social:
+  name: Belanja Aja
+  links:
+    - https://github.com/salamon1999/belanja-aja
+
+# Exclude files from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - .gitignore
+  - backend/
+  - mobile/
+  - tests/
+  - scripts/
